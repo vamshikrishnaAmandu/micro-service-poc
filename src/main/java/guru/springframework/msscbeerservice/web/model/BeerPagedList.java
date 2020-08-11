@@ -9,6 +9,7 @@ public class BeerPagedList extends PageImpl<BeerDto>{
 
     public BeerPagedList(List<BeerDto> content, Pageable pageable, long total) {
         super(content, pageable, total);
+        System.out.println("BeerPageListConstructor");
     }
 
     public BeerPagedList(List<BeerDto> content) {
